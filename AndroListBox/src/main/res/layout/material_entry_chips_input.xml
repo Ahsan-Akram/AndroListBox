@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/languages_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_background"
+    android:paddingHorizontal="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="2dp">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:chipSpacingVertical="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/languages_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:completionThreshold="1"
+            android:dropDownAnchor="@id/chip_group"
+            android:dropDownWidth="wrap_content"
+            android:minHeight="35dp"
+            android:paddingStart="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:textSize="20sp" />
+    </com.google.android.material.chip.ChipGroup>
+</LinearLayout>
