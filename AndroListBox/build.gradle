@@ -45,7 +45,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.Ahsan-Akram'
             artifactId = 'AndroListBox'
-            version = '0.1.2'
+            version = '0.1.3'
 
             afterEvaluate {
                 from components.release
